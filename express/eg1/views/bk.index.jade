@@ -1,0 +1,28 @@
+extends layout
+
+block content
+ h2.head1= title
+ br
+ p.box3
+  |#{title}へようこそ
+  br
+  br
+ div.box1
+  br
+  a(href="/ani1", target="_blank") 
+   img(src="img/canv.png")
+   br
+   |アニキたたき ver0.1
+  br
+  a(href="/ani2", target="_blank") 
+   img(src="img/canv.png")
+   br
+   |アニキたたき ver0.2
+  div(ng-app="")
+  name 
+  input(type="text", name="input", ng-model="name")
+  p.box2
+   {{name}} 
+   br 
+   br
+
